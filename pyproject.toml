@@ -1,0 +1,17 @@
+[project]
+name = "speculative-rag-engine"
+version = "1.0.0"
+description = "High-throughput speculative RAG & inference routing engine"
+authors = [{ name = "Harsh Agarwal", email = "agarwalharsh982@gmail.com" }]
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn>=0.28.0",
+    "numpy>=1.26.0",
+    "pydantic>=2.6.0",
+    "websockets>=12.0"
+]
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
